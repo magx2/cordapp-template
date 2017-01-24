@@ -1,5 +1,6 @@
 package com.example.model
 
+import java.math.BigDecimal
 import java.util.*
 
 /**
@@ -48,3 +49,9 @@ data class PurchaseOrder(val orderNumber: Int,
                          val deliveryDate: Date,
                          val deliveryAddress: Address,
                          val items: List<Item>)
+
+data class Loan(val total: BigDecimal,
+           val interestRate: BigDecimal,
+           val maturityDate: Date,
+           val minimalInvest: BigDecimal,
+           val expires: Date)
